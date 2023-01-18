@@ -1,0 +1,44 @@
+*{
+    margin:  0;
+    padding: 0;
+}
+.Main_Offer{
+    height: 4vh;
+    background-color:rgb(110, 110, 110);
+    color:white;
+    text-align: center;
+    padding-top: 2vh;
+}
+.Main_Header{
+    background-color: whitesmoke;
+    color: black;
+}
+.Caption{
+    background-color:black;
+    color: white;
+    height: 4vh;
+}
+.yellow{
+    color: yellow;
+}
+.Find_a_Home{
+    font: 8vh impact;
+}
+.backposter{
+    width:100vh;
+}
+.offer_first{
+    background-color:rgb(221, 152, 163);
+}
+.footer_first{
+    background-color:rgb(236, 229, 229);
+    color: rgb(17, 17, 17);
+}
+.footer_second{
+    background-color:rgb(148, 141, 141);
+    color: white;
+}
+.main{
+    background-color: rgb(26, 105, 116);
+}
+
