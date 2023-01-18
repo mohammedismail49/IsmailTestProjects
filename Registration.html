@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarogya Hospitals Registration</title>
+    <link rel="stylesheet" href="formStyle.css">
+
+</head>
+<body>
+    <div id="frm">
+        <br>
+        Patient Registration form
+    </div>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="Branch">Branch</label>
+          <select id="Brch" name="Brch">
+            <option value="Vijayawada">Vijayawada</option> 
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Vizag">Vizag</option>
+          </select>
+
+          <label for="phno">Phone Number</label>
+          <input type="text" id="phno" name="cntno" placeholder="Phone number">
+      
+          <label for="guardianname">Guardian Name</label>
+          <input type="text" id="guardianname" name="guardianname" placeholder="Guardian Name">
+<br>
+          <label for="Gender">Male</label>
+          <input type="radio" name="f\male" id="m">
+          <label for="Gender"> Female</label>
+          <input type="radio" name="f\male" id="f">
+          <br>
+<br>
+          <label for="Concerns">Concerns</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</body>
+</html>
