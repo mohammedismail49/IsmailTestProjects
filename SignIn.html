@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    function validateForm() {
+      var name = document.forms["signinForm"]["name"].value;
+      var email = document.forms["signinForm"]["email"].value;
+      var phone = document.forms["signinForm"]["phone"].value;
+      var password = document.forms["signinForm"]["password"].value;
+
+      if (name == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+
+      if (email == "") {
+        alert("Email must be filled out");
+        return false;
+      }
+
+      if (phone == "") {
+        alert("Phone number must be filled out");
+        return false;
+      }
+
+      if (password == "") {
+        alert("Password must be filled out");
+        return false;
+      }
+      // additional validation can be added here
+    }
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center">Sign In</h1>
+  <form name="signinForm" action="submitSignIn" method = "Post" onsubmit="return validateForm()">
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <a href="index.html" class="btn btn-secondary">Return to Home</a>
+    </div>
+    <div class="form-group">
+      <a href="SignUp.html" class="btn btn-secondary">Create New Account</a>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
